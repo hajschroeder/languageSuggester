@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text">
+    <link href="css/styles.css" rel="stylesheet" type="text">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Languages and You</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Learn a Coding Language</h1>
+        <p>Hey there! So you've decided to learn how to code. That's so exciting. Before you pick which languages are right for you, let's get some information about yourself.
+        </p>
+
+        <form id="basics">
+          <label for="name">What's your name?</label>
+          <input id="name" type="text">
+          <label for="age">And how old are you?</label>
+          <input id="age" type="text">
+          <label for="gender">And lastly, with what gender do you best identify?</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+          </select>
+
+          <button type="submit" class="btn">Let's get to know you!</button>
+        </form>
+
+        <div id="bio">
+          <p>Nice to meet you, <span id="name"></span>. You're <span id="age"></span>, and you identify as <span id=
+          gender"></span></p>
+        </div>
+    </div>
+
+  </body>
+</html>
