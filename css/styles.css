@@ -1,7 +1,11 @@
 .btn {
-  display:block
+  display:block;
 }
 
 #bio{
-  display: none
+  display: none;
+}
+
+#robo{
+  font-family: 'Courier New', Courier, monospace;
 }

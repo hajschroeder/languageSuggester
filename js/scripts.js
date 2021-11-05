@@ -1,11 +1,17 @@
 $(document).ready(function(){
-  $(form#basics).submit(function(event){
-    const name = $("input#name").val();
-    const age = $parseInt("input#age").val();
-    const gender = $("select#gender").val();
-    
-    $("bio").show();
-
+  $("#basics").submit(function(event){
     event.preventDefault();
+    const nameInput= $("input#name").val();
+    const ageInput= $("input#age").val();
+    const genderInput= $("input#gender").val();
+
+    $(".name").text(nameInput);
+    $(".age").text(ageInput);
+    $(".gender").text(genderInput);
+
+
+    $("#bio").show();
+    
   });
+  
 });

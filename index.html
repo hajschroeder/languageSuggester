@@ -12,27 +12,32 @@
       <h1>Let's Learn a Coding Language</h1>
         <p>Hey there! So you've decided to learn how to code. That's so exciting. Before you pick which languages are right for you, let's get some information about yourself.
         </p>
-
-        <form id="basics">
-          <label for="name">What's your name?</label>
-          <input id="name" type="text">
-          <label for="age">And how old are you?</label>
-          <input id="age" type="text">
-          <label for="gender">And lastly, with what gender do you best identify?</label>
-          <select id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="non-binary">Non-binary</option>
-          </select>
-
-          <button type="submit" class="btn">Let's get to know you!</button>
-        </form>
-
+        <div>
+          <form id="basics">
+            <div class="form-group">
+              <label for="name">What's your name?</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="age">How old are you?</label>
+              <input id="age" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+            <select id="gender">
+              <option value="male" type="text">Male</option>
+              <option value="female" type="text">Female</option>
+              <option value="non-binary" type="text">Non-binary</option>
+            </select>
+            </div>
+            <button type="submit" class="btn">Let's get to know you!</button>
+          </form>
+        </div>
         <div id="bio">
-          <p>Nice to meet you, <span id="name"></span>. You're <span id="age"></span>, and you identify as <span id=
-          gender"></span></p>
+          <p>Nice to meet you, <span class="name"></span>. You're <span class="age"></span>, and you identify as <span class="gender"></span>. My name is <span id="robo"><strong>LANGUAGEPICKER5000!!!</strong></span></p>
         </div>
     </div>
+
+    <p>Now that we've gotten to know eachother a little bit, let's find out what language would be right for you.</p>
 
   </body>
 </html>
