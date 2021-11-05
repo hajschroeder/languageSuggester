@@ -19,5 +19,15 @@ $(document).ready(function(){
     $("#bio").show();
     
   });
+
+  $("#survey").submit(function(event){
+    console.log("Reached user survey");
+    event.preventDefault();
+
+
+
+    $("#info").show();
+
+  });
   
 });
