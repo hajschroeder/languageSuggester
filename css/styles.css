@@ -2,10 +2,20 @@
   display:block;
 }
 
-#bio{
+#bio {
   display: none;
 }
 
-#robo{
+#robo {
   font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  margin: 40px;
+  border: 40px;
+  padding: 8px;
+}
+
+#survey {
+  display: none;
 }
