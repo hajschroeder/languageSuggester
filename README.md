@@ -18,7 +18,8 @@ _This webpage is being called a language suggester. It's surface function is to 
 [Click Here](https://hajschroeder.github.io/languageSuggester) to view the project
 
 ## Known Bugs
-* When the "bio" id is shown (lines 35, 36) it is now showing the value selected by the user from the drop down menu (lines 25-31)
+* All og scripts.js from line 22 to the end is buggy. The programmer cannot get the code to return values to the page as they are inputted by the user, and therefore cannot suggest a coding language based on their input. 
+* HTML is currently incomplete
 
 ## License 
 [MIT](https://choosealicense.com/licenses/mit/)
