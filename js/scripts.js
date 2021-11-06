@@ -1,7 +1,3 @@
-function gender(option){
-  return option;
-}
-
 $(document).ready(function(){
   console.log("Script executing!");
   $("#basics").submit(function(event){
@@ -9,25 +5,14 @@ $(document).ready(function(){
     event.preventDefault();
     const nameInput= $("input#name").val();
     const ageInput= $("input#age").val();
-    const genderInput= $("input#gender").val();
+    const genderSelect= $("select#gender").val();
 
     $(".name").text(nameInput);
     $(".age").text(ageInput);
-    $(".gender").text(genderInput);
+    $(".gender").text(genderSelect);
 
 
     $("#bio").show();
-    
-  });
-
-  $("#survey").submit(function(event){
-    console.log("Reached user survey");
-    event.preventDefault();
-
-
-
     $("#info").show();
-
   });
-  
 });
