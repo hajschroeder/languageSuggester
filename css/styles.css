@@ -16,26 +16,6 @@
   padding: 8px;
 }
 
-#info {
-  display: none;
-}
-
-#survey {
-  display: none;
-}
-
-#mobile {
-  display: none;
-}
-
-#web {
-  display: none;
-}
-
-#both {
-  display: none;
-}
-
-#neither {
+#questions{
   display: none;
 }
