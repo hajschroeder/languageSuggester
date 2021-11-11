@@ -1,8 +1,8 @@
 $(document).ready(function(){
   console.log("Script executing!");
   $("form#basics").submit(function(event){
-    console.log("Submit form reached");
     event.preventDefault();
+    console.log("Submit form reached");
     const nameInput= $("input#name").val();
     const ageInput= $("input#age").val();
     const genderSelect= $("select#gender").val();
@@ -16,20 +16,30 @@ $(document).ready(function(){
 
     $("#bio").show();
     $("#questions").show(); 
-    console.log("succesfully filled out first form, reached second");
+    console.log("Survey Reached");
+
   });
     $("form#survey").submit(function(event){
-      let interestSelect= $("select#interest").val();
-      let expSelect= $("select#experience").val();
-      let lotrSelect= $("select#lotr").val();
-      let kevinSelect= $("select#kevin").val();
-      let cookingSelect= $("select#cooking").val();
       event.preventDefault();
+      const interestSelect= $("select#interest").val();
+      const expSelect= $("select#experience").val();
+      const lotrSelect= $("select#lotr").val();
+      const kevinSelect= $("select#kevin").val();
+      const cookingSelect= $("select#cooking").val();
 
-      $("#interest").val();
-      command.log(interestSelect);
-  });
+      $(".interest").text(interestSelect);
+      $(".experience").text(expSelect);
+      $(".lotr").text(lotrSelect);
+      $(".kevin").text(kevinSelect);
+      $(".cooking").text(cookingSelect);
+
+      $("#result").show();
+      
+
+      
+    });   
+
+
 
 });
 
-function 
