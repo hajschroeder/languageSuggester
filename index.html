@@ -31,7 +31,7 @@
                 <option value="non-binary">Non-binary</option>
               </select>
             </div>
-            <button type="submit" class="btn">Let's get to know you!</button>
+            <button type="submit" class="btn btn-primary">Let's get to know you!</button>
           </form>
         </div>
         <div id="bio">
@@ -46,6 +46,7 @@
           <div class="form-group">
             <p>Why are you interested in coding?</p>
             <select class="form-control" id="interest" type="text">
+              <option>--</option>
               <option value="selectA">I want to design mobile apps for fun</option>
               <option value="selectB">I want a good job</option>
               <option value="selectC">I want to challenge myself</option>
@@ -55,6 +56,7 @@
           <div class="form-group">
             <p>Do you have any prior experience working with code?</p>
             <select class="form-control" id="experience" type="text">
+              <option>--</option>
               <option value="selectA">I have no experience</option>
               <option value="selectB">I have fiddled around with some HTML</option>
               <option value="selectC">I'm currently a jr. developer</option>
@@ -65,6 +67,7 @@
           <div class="form-group">
             <p>If you were in Lord of the Rings, which would you rather be?</p>
             <select class="form-control" id="lotr"  type="text">
+              <option>--</option>
               <option value="selectA">A Hobbit</option>
               <option value="selectB">An Elf</option>
               <option value="selectC">I'd be a straight up Maia like Gandalf!!</option>
@@ -75,16 +78,18 @@
           <div class="form-group">
             <p>Why do you hate your boss Kevin so much?? He seems like a nice enough guy!</p>
             <select class="form-control" id="kevin" type="text">
+              <option>--</option>
               <option value="selectA">Huh?</option>
               <option value="selectB">Excuse me?</option>
               <option value="selectC">Who is Kevin?</option>
-              <option value="selectD">...how did you know I have a boss I hate named kevin? WHO ARE YOU PEOPLE???</option>
+              <option value="selectD">...how did you know I have a boss named kevin? WHO ARE YOU PEOPLE???</option>
             </select>
           </div>
 
           <div class="form-group">
             <p>And lastly, what level experience do you have with cooking?</p>
             <select class="form-control" id="cooking" type="text">
+              <option>--</option>
               <option value="selectA">Very little, but I'm excited to learn some basics</option>
               <option value="selectB">I am a decent home cook, but nothing too fancy</option>
               <option value="selectC">I have experience working in kitchens, but I'd like to elevate my skills from line cook to chef</option>
@@ -92,124 +97,14 @@
             </select>
           </div>
           
-          <button type="submit" class="btn">Okay, let's find out what language is right for you!</button>
+          <button type="submit" class="btn btn-primary">Okay, let's find out what language is right for you!</button>
 
           <div id="result">
-            <ul>
-              <li><span class="interest"></span></li>
-              <li><span class="experience"></span></li>
-              <li><span class="lotr"></span></li>
-              <li><span class="kevin"></span></li>
-              <li><span class="cooking"></span></li>
-            </ul>
+            <h2>You should learn: <span id="language"></span></h2>
 
           </div>
         </div>
       </form>
     </div>
-    
-  </body>
-  </html>
-      <!-- <div id="info">
-      <p><strong>Please fill in the information above and then</strong>
-      <button type="submit" class="btn">CLICK HERE</button> <strong> to get started</strong></p>
-          <p>Coding is a lot of fun, and it's a good workout for the brain. But it's important that you pick the right language for you. Let's ask some questions, and the way you answer will help us determine what you should focus on!</p>
-
-          <form id="apps">
-          <h2>Web Apps vs Mobile Apps</h2>
-          <p>Which would you prefer to work on?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="app" value="mobile" checked>
-                Mobile
-                </label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="app" value="Web">
-                  Web
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                <input type="radio" name="app" value="both">
-                Both
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="app" value="neither">
-                  Neither
-                </label>
-              </div>
-              <button type="submit" class="btn">Reveal your language!</button>
-              <p><span id="mobile">If you want to make mobile apps you should learn JavaScript</span></p>
-            </form>
-          <form id="ai"> 
-          <h2>Interested In Artificial Intelligence?</h2>
-          <p>Artificial Intelligence (AI) is becoming a bigger part of our technological world. Does AI interest you at all?</p>
-              <select class="form-group" id="ai" type="text">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </form>
-          <h2>This May Sound Funny But...</h2>
-          <p>...I'm gonna need you to pick one of these cinematic universes</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="movie" value="starwars">
-              Star Wars
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="movie" value="lotr">
-              Lord of the Rings
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="movie" value="marvel">
-              Marvel
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="movie" value="universal">
-              Black and White Universal Monsters
-            </label>
-          </div>
-
-          <h2>Why Are You Here?</h2>
-          <p>Everyone has their own reasons for wanting to learn how to code. Which of these best describes your reasons?</p>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="tech">
-              I find technology interesting.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="career">
-              I wanted a career change but don't have the skills yet.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="improve">
-              I want to use tech to make the world a better place!
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="reason" value="chef">
-              I don't want to learn a coding language! I'm trying to fill out an application to culinary school but I keep getting redirected here!!!
-            </label>
-          </div>
-          
-          <h2>Final Bit of Info</h2>
-          <p>We just need to know, are you afraid of snakes?</p>
-          <select class="form-control" id="snakes" type="text">
-            <option value="1">They don't bother me!</option>
-            <option value="2">Horrified of them. I'm a regular Indiana Jones</option>
-          </select>
-        </div> -->
+    </body>
+</html>

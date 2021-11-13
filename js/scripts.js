@@ -7,16 +7,13 @@ $(document).ready(function(){
     const ageInput= $("input#age").val();
     const genderSelect= $("select#gender").val();
 
-
-
     $(".name").text(nameInput);
     $(".age").text(ageInput);
     $(".gender").text(genderSelect);
 
 
     $("#bio").show();
-    $("#questions").show(); 
-    console.log("Survey Reached");
+    $("#questions").show();
 
   });
     $("form#survey").submit(function(event){
@@ -35,11 +32,9 @@ $(document).ready(function(){
 
       $("#result").show();
       
-
-      
-    });   
-
+    }); 
+  });
 
 
-});
+
 
