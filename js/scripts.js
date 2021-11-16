@@ -35,6 +35,16 @@ $(document).ready(function(){
     }); 
   });
 
+const languages = {
+  "selectA": "JavaScript",
+  "selectB": "C#",
+  "selectC": "Python",
+  "selectD": "It doesn't sound like you're interested in coding. Maybe try a culinary school?",
+};
+
+function answerCounts(answers) {
+  
+}
 
 
 
