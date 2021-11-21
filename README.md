@@ -18,7 +18,7 @@ _This webpage is being called a language suggester. On the surface level it's pu
 [Click Here](https://hajschroeder.github.io/languageSuggester) to view the project
 
 ## Known Bugs
-* In it's current form, the entire site is a bug. However, the programmer has a version he has written which does work and meets the standards of code as laid out for the assignment by Epicodus. That aforementioned version was attained by using methods, resources, and research outside of those taught by Epicodus, and as such, the programmer is hesitant to include them in this submission. It is currently unclear to the programmer if this is acceptable when submitting code for review, and the programmer is waiting for a response from his instructor which he hopes will confirm that his alternate code is acceptable, or if he needs to keep pursuing the result for this review using the resources as supplied by Epicodus
+* All non Jquery script is buggy
 
 ## License 
 [MIT](https://choosealicense.com/licenses/mit/)

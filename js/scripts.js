@@ -30,6 +30,7 @@ $(document).ready(function(){
       $(".kevin").text(kevinSelect);
       $(".cooking").text(cookingSelect);
 
+
       $("#result").show();
       
     }); 
@@ -42,9 +43,4 @@ const languages = {
   "selectD": "It doesn't sound like you're interested in coding. Maybe try a culinary school?",
 };
 
-function answerCounts(answers) {
-  
-}
-
-
-
+function getAnswers(answer) 
