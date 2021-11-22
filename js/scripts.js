@@ -22,24 +22,32 @@ $(document).ready(function(){
       let lotrSelect= parseInt($("select#lotr").val());
       let kevinSelect= parseInt($("select#kevin").val());
       let cookingSelect= parseInt($("select#cooking").val());
-      let mostChosen = interestSelect + expSelect + lotrSelect + kevinSelect + cookingSelect
+      //the variables above have been changed to integers. The total value of the users' inputs will determine what their suggested language should be. 
       
-
       $(".interest").text(interestSelect);
       $(".experience").text(expSelect);
       $(".lotr").text(lotrSelect);
       $(".kevin").text(kevinSelect);
       $(".cooking").text(cookingSelect);
-      const languages = {
-        "1": "JavaScript",
-        "2": "C#",
-        "3": "Python",
-        "4": "It doesn't sound like you're interested in coding. Maybe try a culinary school?",
-      };
-
-
-
       $("#result").show();
+
+      const java = "JavaScript";
+      const cSharp = "C#";
+      const python = "Python";
+      const cooking = "It doesn't seem like you're particulary interested in coding. Maybe look into a culinary school?";
+
+      
+
+      
+      let mostChosen = interestSelect + expSelect + lotrSelect + kevinSelect + cookingSelect;
+     
+      if (mostChosen === 5 {
+        return java;
+      }
+
+
+
+
       
     });   
   });  
