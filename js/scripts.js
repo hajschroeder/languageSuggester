@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  console.log("Script executing!");
   $("form#basics").submit(function(event){
     event.preventDefault();
     console.log("Submit form reached");
@@ -18,29 +17,30 @@ $(document).ready(function(){
   });
     $("form#survey").submit(function(event){
       event.preventDefault();
-      const interestSelect= $("select#interest").val();
-      const expSelect= $("select#experience").val();
-      const lotrSelect= $("select#lotr").val();
-      const kevinSelect= $("select#kevin").val();
-      const cookingSelect= $("select#cooking").val();
+      let interestSelect= parseInt($("select#interest").val());
+      let expSelect= parseInt($("select#experience").val());
+      let lotrSelect= parseInt($("select#lotr").val());
+      let kevinSelect= parseInt($("select#kevin").val());
+      let cookingSelect= parseInt($("select#cooking").val());
+      let mostChosen = interestSelect + expSelect + lotrSelect + kevinSelect + cookingSelect
+      
 
       $(".interest").text(interestSelect);
       $(".experience").text(expSelect);
       $(".lotr").text(lotrSelect);
       $(".kevin").text(kevinSelect);
       $(".cooking").text(cookingSelect);
+      const languages = {
+        "1": "JavaScript",
+        "2": "C#",
+        "3": "Python",
+        "4": "It doesn't sound like you're interested in coding. Maybe try a culinary school?",
+      };
+
 
 
       $("#result").show();
       
-    }); 
-  });
-
-const languages = {
-  "selectA": "JavaScript",
-  "selectB": "C#",
-  "selectC": "Python",
-  "selectD": "It doesn't sound like you're interested in coding. Maybe try a culinary school?",
-};
-
-function getAnswers(answer) 
+    });   
+  });  
+  
